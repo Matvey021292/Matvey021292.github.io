@@ -137,7 +137,7 @@ $('.sale').click(function(){
 });
 
 
-$(window).ready(function(){
+
   $(window).resize(function(){
     var windSize =  $(window).width();
     if (windSize<800) {
@@ -145,8 +145,7 @@ $(window).ready(function(){
     }if(windSize<600){
       $('#show_block').removeClass('effect6');
     }
-  })
-})
+  });
 
 
 
