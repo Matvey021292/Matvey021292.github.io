@@ -3146,9 +3146,6 @@ html, body {
   @media (max-width: 600px) and (max-width: 600px) {
     .content.postSection div.aside .blog-content-news {
       padding: 2% 10% !important; } }
-        @media (max-width: 600px) {
-            .content.postSection div.aside figcaption {
-              display: none; } }
         .content.postSection div.aside.show_block {
           left: 0;
           width: 100%; }
@@ -3166,29 +3163,17 @@ html, body {
             border-right: none; }
         .content.postSection div.aside h5:first-child {
           font-family: "Intro-Inline", sans-serif;
-          font-size: 1.1em;
+          font-size: 1.5em;
           margin-bottom: 15px;
-          padding: 6% 6%;
-          transition: all 1s;
           text-align: center;
-          color: #fff;
-          background: url(../img/flag1.3.png) no-repeat;
-          background-size: 100% 100%; }
+          color: #243B55 !important; }
           @media (max-width: 600px) {
             .content.postSection div.aside h5:first-child {
-              display: none; } }
-        .content.postSection div.aside:hover h5 {
-          background-image: url(../img/flag1.2.png); }
+              color: #fff !important; } }
         .content.postSection div.aside h3 {
           font-size: 1.5em; }
         .content.postSection div.aside a {
           font-size: .7em; }
-        .content.postSection div.aside figcaption {
-          font-size: .6em;
-          height: 22%; }
-          @media (max-width: 800px) {
-            .content.postSection div.aside figcaption {
-              font-size: .5em; } }
         .content.postSection div.aside .social-logo-icon {
           display: none; }
       .content.postSection div.leftMain, .content.postSection div.aside_context {
@@ -3199,8 +3184,6 @@ html, body {
         flex-grow: 1;
         order: 1;
         flex-basis: 17%; }
-        .content.postSection div.leftMain:hover .rightTitle, .content.postSection div.aside_context:hover .rightTitle {
-          background-image: url(../img/flag1.1.png); }
         @media (max-width: 800px) {
           .content.postSection div.leftMain, .content.postSection div.aside_context {
             position: absolute;
@@ -3253,18 +3236,13 @@ html, body {
             background: transparent; }
   .content .rightTitle {
     font-family: "Intro-Inline", sans-serif;
-    font-size: .9em;
+    font-size: 1.3em;
     margin-bottom: 15px;
-    padding: 6% 3%;
-    cursor: pointer;
-    transition: all 1s;
     text-align: center;
-    color: #fff;
-    background: url(../img/flag1.png) no-repeat;
-    background-size: 100% 100%; }
+    color: #243B55; }
     @media (max-width: 800px) {
       .content .rightTitle {
-        display: none;
+        color: #fff;
         margin-bottom: 10px; } }
 
 #responsleftTitle {
@@ -3474,37 +3452,6 @@ html, body {
       padding: 0; }
     .blog-content .blog-content-news figure {
       width: 100%; }
-      .blog-content .blog-content-news figure figcaption {
-        font-size: .8em;
-        position: absolute;
-        display: block;
-        text-transform: uppercase;
-        color: #fff;
-        color: aliceblue;
-        background: #141E30 !important;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, rgba(36, 59, 85, 0.93), rgba(20, 30, 48, 0.93)) !important;
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, rgba(36, 59, 85, 0.93), rgba(20, 30, 48, 0.93)) !important;
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        text-shadow: .1em .1em .2em black; }
-        .blog-content .blog-content-news figure figcaption p {
-          font-size: 80%;
-          position: absolute;
-          bottom: 100%;
-          padding: 1em;
-          -webkit-transition: opacity .35s;
-          -o-transition: opacity .35s;
-          transition: opacity .35s;
-          text-transform: none;
-          color: #fff; }
-        .blog-content .blog-content-news figure figcaption data {
-          padding-right: 10px; }
-        .blog-content .blog-content-news figure figcaption img {
-          max-width: 100%;
-          height: auto; }
-      .blog-content .blog-content-news figure:hover figcaption {
-        opacity: 1; }
     .blog-content .blog-content-news:hover h3 {
       border-bottom: 2px solid #34B484;
       border-left: 30px solid #34B484; }
@@ -3560,8 +3507,6 @@ html, body {
               padding: 2px; } }
     .center-content-info .blog-content-news h4 a {
       font-size: .9em; }
-    .center-content-info .blog-content-news figcaption {
-      font-size: .6em; }
     .center-content-info .blog-content-news .more {
       font-size: .8em; }
 
@@ -4032,10 +3977,10 @@ figure.effect-sadie:hover p {
 /***** Roxy *****/
 /*---------------*/
 figure.effect-roxy {
-  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-  background: -o-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-  background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%); }
+  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%) !important;
+  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%) !important;
+  background: -o-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%) !important;
+  background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%) !important; }
 
 figure.effect-roxy img {
   width: calc(100% + 60px);
@@ -4052,7 +3997,7 @@ figure.effect-roxy figcaption::before {
   top: 30px;
   right: 30px;
   bottom: 30px;
-  left: 30px;
+  left: 35px;
   border: 1px solid #fff;
   content: '';
   opacity: 0;
@@ -4779,8 +4724,9 @@ figure.effect-sarah:hover p {
 figure.effect-zoe figcaption {
   top: auto;
   bottom: 0;
-  padding: 1em;
-  height: 3.75em;
+  padding: 0;
+  height: 14%;
+  padding: 0 2%;
   background: #fff;
   color: #3c4a50;
   -webkit-transition: -webkit-transform 0.35s;
@@ -4792,10 +4738,13 @@ figure.effect-zoe figcaption {
   transform: translate3d(0, 100%, 0); }
 
 figure.effect-zoe h2 {
-  float: left; }
+  float: left;
+  line-height: 2; }
 
+figure.effect-zoe figcaption > a,
 figure.effect-zoe figcaption > span {
-  float: right; }
+  float: right;
+  line-height: 2; }
 
 figure.effect-zoe p {
   position: absolute;

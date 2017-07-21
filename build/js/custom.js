@@ -147,6 +147,8 @@ $('.sale').click(function(){
     }
   });
 
+  
+
 
 
 

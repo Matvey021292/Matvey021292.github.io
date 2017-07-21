@@ -122,9 +122,7 @@
                     }
 
 
-                    figcaption {
-                        display: none;
-                    }
+                   
                 }
                 &.show_block {
                     left: 0;
@@ -151,38 +149,22 @@
                 }
                 h5:first-child {
                     font-family: $fontfamilyintroInline;
-                    font-size: 1.1em;
-
+                    font-size: 1.5em;
                     margin-bottom: 15px;
-                    padding: 6% 6%;
-
-                    transition: all 1s;
                     text-align: center;
-
-                    color: #fff;
-                    background: url(../img/flag1.3.png)no-repeat;
-                    background-size: 100% 100%;
+                    color:$colorH !important;
                     @media(max-width: 600px) {
-                        display:none;
+                        color:#fff !important;
                     }
                 }
-                &:hover h5 {
-                    background-image: url(../img/flag1.2.png);
-                }
+               
                 h3 {
                     font-size: 1.5em;
                 }
                 a {
                     font-size: .7em;
                 }
-                figcaption {
-                    font-size: .6em;
-
-                    height: 22%;
-                    @media(max-width: 800px) {
-                        font-size: .5em;
-                    }
-                }
+           
                 .social-logo-icon {
                     display: none;
                 }
@@ -199,9 +181,7 @@
                 &>div {
                     // border-bottom: 1px solid #fff;
                 }
-                &:hover .rightTitle {
-                    background-image: url(../img/flag1.1.png);
-                }
+              
                 @media(max-width: 800px) {
                     position: absolute;
                     z-index: 2;
@@ -249,9 +229,7 @@
                 }
                 h3 {
                     font-size: .7em;
-
                     margin-bottom: 7%;
-
                     border-bottom: 1px solid $colorH; // border-right:20px solid $colorH;
                     border-left: none; // padding:2%;
                     // padding-right: 6%;
@@ -271,17 +249,12 @@
 
     .rightTitle {
         font-family: $fontfamilyintroInline;
-        font-size: .9em;
+        font-size: 1.3em;
         margin-bottom: 15px;
-        padding: 6% 3%;
-        cursor: pointer;
-        transition: all 1s;
-        text-align: center;
-        color: #fff;
-        background: url(../img/flag1.png)no-repeat;
-        background-size: 100% 100%;
+        text-align:center;
+        color: $colorH;
         @media(max-width: 800px) {
-            display: none;
+            color:#fff;
             margin-bottom: 10px;
         }
     }
@@ -554,45 +527,7 @@
         }
         figure {
             width: 100%;
-            figcaption {
-                font-size: .8em;
-
-                position: absolute;
-
-                display: block;
-
-                text-transform: uppercase;
-
-                color: #fff;
-                color: aliceblue;
-                @include _colorGradientBackgrounBlue;
-                text-shadow: .1em .1em .2em black;
-                p {
-                    font-size: 80%;
-
-                    position: absolute;
-                    bottom: 100%;
-
-                    padding: 1em;
-
-                    -webkit-transition: opacity .35s;
-                    -o-transition: opacity .35s;
-                    transition: opacity .35s;
-                    text-transform: none;
-
-                    color: #fff;
-                }
-                data {
-                    padding-right: 10px;
-                }
-                img {
-                    max-width: 100%;
-                    height: auto;
-                }
-            }
-            &:hover figcaption {
-                opacity: 1;
-            }
+        
         }
         &:hover h3 {
             border-bottom: 2px solid $colorgreen;
@@ -670,9 +605,7 @@
                 font-size: .9em;
             }
         }
-        figcaption {
-            font-size: .6em;
-        }
+     
         .more {
             font-size: .8em;
         }
