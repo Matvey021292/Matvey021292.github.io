@@ -137,7 +137,16 @@ $('.sale').click(function(){
 });
 
 
-
+$(window).ready(function(){
+  $(window).resize(function(){
+    var windSize =  $(window).width();
+    if (windSize<800) {
+      $('#show').removeClass('effect6');
+    }if(windSize<600){
+      $('#show_block').removeClass('effect6');
+    }
+  })
+})
 
 
 

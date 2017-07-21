@@ -290,6 +290,9 @@ $colors: #360745, #D61C59, #E7D84B, #EFEAC5, #1B8798;
   background: hsl(200,70,11);
   background-size: .12em 100%;
   font: 16em/1 Arial;
+  @media(max-width:600px){
+    display:none;
+  }
 }
 
 .text--line {
@@ -310,7 +313,7 @@ $stroke-step: 7%;
   stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
   stroke-width: 3px;
   
-  animation: stroke-offset 4s infinite linear;
+  animation: stroke-offset 2s infinite linear;
   
   @for $item from 1 through $max {
     $stroke-color: nth($colors, $item);
