@@ -39,7 +39,7 @@ nav ul li a {
 	padding:1.5em 2em;
 	text-decoration:none;
 
-	border-bottom:5px solid transparent;
+	border-bottom:3px solid transparent;
 	transition-property:all .2s linear 0s;
 	-moz-transition:all .2s linear 0s;
 	-webkit-transition:all .2s linear 0s;
@@ -55,7 +55,7 @@ nav ul li a {
 }
 nav ul li a:hover {
 	color: #34B484;
-	border-bottom:5px solid #34B484;
+	border-bottom:3px solid #34B484;
 }
 /*styling open close button*/
 nav .button {
