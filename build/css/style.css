@@ -3280,16 +3280,141 @@ html, body {
   @media (max-width: 600px) {
     .blog-content {
       padding: 0; } }
-  .blog-content .one_bloc.blog-content-news {
-    margin: 0 13% !important;
-    padding: 2% !important; }
-    @media (max-width: 800px) {
-      .blog-content .one_bloc.blog-content-news {
-        margin: 10px !important; } }
-  .blog-content .one_bloc.blog-content-news.post {
-    margin: 0 4% !important; }
-    .blog-content .one_bloc.blog-content-news.post:hover {
-      background: transparent; }
+  .blog-content .one_bloc > .blog-content {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 0;
+    margin: 0; }
+    .blog-content .one_bloc > .blog-content .blog-content-news {
+      width: 60%;
+      min-width: 300px;
+      background: none;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+      padding: 0;
+      margin: 0;
+      margin: 0% 2% !important;
+      height: auto; }
+    .blog-content .one_bloc > .blog-content .blog-content {
+      width: 30%;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+      margin: 0;
+      padding: 0;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+      align-content: stretch;
+      -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      align-items: center;
+      margin: 0% 1% !important;
+      height: auto; }
+      .blog-content .one_bloc > .blog-content .blog-content .blog-content-news {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -ms-flex-item-align: auto;
+        align-self: stretch;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch; }
+        .blog-content .one_bloc > .blog-content .blog-content .blog-content-news h3 {
+          border: none;
+          font-size: 1em;
+          -webkit-order: 0;
+          -ms-flex-order: 0;
+          order: 0;
+          -webkit-flex: 0 1 auto;
+          -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+          -webkit-align-self: auto;
+          -ms-flex-item-align: auto;
+          align-self: auto; }
+        .blog-content .one_bloc > .blog-content .blog-content .blog-content-news h4 {
+          font-size: 0.7em; }
+        .blog-content .one_bloc > .blog-content .blog-content .blog-content-news .flex-container {
+          display: flex;
+          margin: 0 !important;
+          -webkit-order: 0;
+          -ms-flex-order: 0;
+          order: 0;
+          -webkit-flex: 1 1 auto;
+          -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+          -webkit-align-self: auto;
+          -ms-flex-item-align: auto;
+          align-self: auto;
+          flex-wrap: wrap; }
+          .blog-content .one_bloc > .blog-content .blog-content .blog-content-news .flex-container .img {
+            flex: 1 1 40%;
+            width: 100%;
+            background-size: cover !important;
+            margin-top: 0 !important; }
+          .blog-content .one_bloc > .blog-content .blog-content .blog-content-news .flex-container h4 {
+            flex: 1 1 30%;
+            width: 100%;
+            margin-left: 5%; }
   .blog-content .border {
     margin: 0 !important;
     -webkit-box-shadow: none;
@@ -5169,49 +5294,6 @@ figure.effect-chico:hover p {
 @media screen and (max-width: 340px) {
   .gridText li {
     width: 100%; } }
-
-.ip-logo #s-text {
-  background: #082330;
-  background-size: .12em 100%;
-  font: 16em/1 Arial; }
-  @media (max-width: 600px) {
-    .ip-logo #s-text {
-      display: none; } }
-
-.ip-logo .text--line {
-  font-size: .5em; }
-
-.ip-logo svg {
-  position: absolute;
-  width: 100%;
-  height: 100%; }
-
-.ip-logo .text-copy {
-  fill: none;
-  stroke: white;
-  stroke-dasharray: 7% 28%;
-  stroke-width: 3px;
-  animation: stroke-offset 2s infinite linear; }
-  .ip-logo .text-copy:nth-child(1) {
-    stroke: #360745;
-    stroke-dashoffset: 7%; }
-  .ip-logo .text-copy:nth-child(2) {
-    stroke: #D61C59;
-    stroke-dashoffset: 14%; }
-  .ip-logo .text-copy:nth-child(3) {
-    stroke: #E7D84B;
-    stroke-dashoffset: 21%; }
-  .ip-logo .text-copy:nth-child(4) {
-    stroke: #EFEAC5;
-    stroke-dashoffset: 28%; }
-  .ip-logo .text-copy:nth-child(5) {
-    stroke: #1B8798;
-    stroke-dashoffset: 35%; }
-
-@keyframes stroke-offset {
-  50% {
-    stroke-dashoffset: 35%;
-    stroke-dasharray: 0 87.5%; } }
 
 /*effect-underline*/
 a.effect-underline:after {
