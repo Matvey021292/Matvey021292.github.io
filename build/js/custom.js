@@ -131,10 +131,13 @@ $(document).keyup(function(e) {
         }
       })();
 
-$('.sale').click(function(){
+$(function(){
+  $('.sale').click(function(){
   $("#box").toggleClass('showBanner');
   return false;
 });
+})
+
 
 
 
