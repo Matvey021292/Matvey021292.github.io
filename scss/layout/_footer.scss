@@ -322,33 +322,29 @@ footer {
 
 
 
-        a{
+        a {
             color:#eee!important;
         }
 
 
         .mainBootoom {
-            flex:1 1 40%;
+            flex: 1 1 40%;
             border: none;
             background: none;
             display: flex;
             margin: auto;
             flex-wrap: wrap;
             margin-right: 3%;
-            
-             @media(max-width: 750px) {
-                
-                margin:0 0 20px 0;
-             
 
+            @media(max-width: 750px) {
+
+                margin:0 0 20px 0;
             }
             @media(max-width: 600px) {
-                flex:2 1 100%;
+                flex: 2 1 100%;
                 width: 100%;
                 justify-content: space-between;
-                margin:0 0 10px 0;
-             
-
+                margin: 0 0 10px 0;
             }
 
 
@@ -372,20 +368,20 @@ footer {
                 margin: 0;
                 margin: 2px;
                 padding: 0.5em 1em;
-                right:0;
-                top:0;
+                right: 0;
+                top: 0;
                 @include _fonts(1em);
-                a{
-                text-transform:uppercase;
-}
+                a {
+                    text-transform: uppercase;
+                }
 
-  
+
 
 
                 @media(max-width: 600px) {
 
 
-                    padding:2%;
+                    padding: 2%;
                 }
             }
         }
@@ -399,10 +395,11 @@ footer {
                 li {
                     font-size: 5em;
                     width: calc(100% / 4);
-                     @media(max-width:600px){
-                    font-size:3em;
-                    width: calc(100% / 4)
-                }
+                    @media(max-width: 600px) {
+                        font-size:3em;
+                        width: calc(100% / 4);
+                        display: none;
+                    }
                 }
             }
         }
@@ -422,24 +419,23 @@ footer {
                     justify-content: space-between;
                 }
             }
-            .links{
-                display:flex;
-                flex-wrap:wrap;
-                justify-content:center;
-
+            .links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
 
 
 
             a {
-                flex:1 1 40%;
+                flex: 1 1 40%;
                 width: 40px;
                 height: 40px;
                 margin: 0 auto;
                 display: block;
                 text-shadow: none;
-                @media(max-width:600px){
+                @media(max-width: 600px) {
                     flex:1 1 20%;
                 }
             }

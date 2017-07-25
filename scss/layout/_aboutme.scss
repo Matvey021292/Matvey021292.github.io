@@ -1,29 +1,25 @@
-
-.column_about{
-        span,
-        h2,
-        h1,
-        h4,
-        h3,
-        p,
-        a{
-            color:#eee!important;
-        }
-      .grid{  
-        figure{
+.column_about {
+    span,
+    h2,
+    h1,
+    h4,
+    h3,
+    p,
+    a {
+        color: #eee!important;
+    }
+    .grid {
+        figure {
             width: 100%!important;
             height: 400px;
-             img{
+            img {
 
                 background-size: cover;
-        
-
-            } }
-            .effect-layla h2 {
-                    padding-top: 10%;
-                    font-size: 2em;
-
-           
-       
-       } }
+            }
+        }
+        .effect-layla h2 {
+            padding-top: 10%;
+            font-size: 2em;
+        }
+    }
 }

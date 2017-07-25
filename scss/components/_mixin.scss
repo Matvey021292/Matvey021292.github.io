@@ -63,7 +63,7 @@ $fontfamilyWroboto: 'Roboto', sans-serif;
 $fontfamilyradio: 'Oswald', sans-serif;
 $fontfamilyfeaser:    feathericons,sans-serif;
 $fontfamilyradioBold:'Oswald', sans-serif;
-$fontfamilyintro: 'Intro', sans-serif;
+$fontfamilyintro: 'roadRadio', sans-serif;
 $fontfamilyintroInline: 'Intro-Inline', sans-serif;
 $textshadow:   0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
@@ -82,6 +82,7 @@ $textshadow:   0 1px 0 #ccc,
 $colorBlue: #795a5a;
 $colorgreen:#34B484;
 $colorH:#243B55;
+$red:#ff5e62;
 
 @mixin _iconGroup{
 	list-style: none;
