@@ -2,20 +2,68 @@
     width: 90%;
     margin: 0 auto;
     @media(max-width: 600px) {
-        width: 90%;
+        width: 100%;
     }
     &.postContent {
         margin: 2% 4%;
         display: flex;
+        position:relative;
+        @media(max-width:600px){
+                flex-direction: column-reverse;
+                width:100%;
+                margin:0;
+                padding:0;
+        }
+        #responsleftTitle{
+            max-width:100%;
+            width:97%;
+            position:relative;
+        }
         #show_block {
 
             height: 100%;
             margin: 10px;
-            @include _colorBOX;
+
         }
         &>div {
             flex: 1 1 auto !important;
+
         }
+
+    }
+    &.pagePost{
+        @media(max-width:600px){
+            display:column;
+        }
+        & > div{
+            flex:1 1 auto;
+
+
+        
+        }
+        #show_block{
+            flex-basis:0;
+        }
+          #responsleftTitle{
+            max-width:100%;
+            width:97%;
+            position:relative;
+        }
+        p{
+            display:inline-block;
+            clear: both;
+
+        }
+        .imgslide{
+              width:50%;
+                display:inline-block;
+                float:right;
+            img{
+              
+
+            }
+        }
+
     }
     &.postSection {
         position: relative;
@@ -54,7 +102,7 @@
                 margin: 12% 2% 0 2%;
             }
             @media(max-width: 450px) {
-                margin: 20% 2% 0 2% !important;
+                margin: 10% 2% 0 2% !important;
             }
 
 
@@ -141,8 +189,8 @@
         }
         & #headfside{
                    & > div{
-                padding:2%;
-                margin:2% 0;
+                padding:4%;
+                    margin: 0% 0 3% 2%;
                         
                     }
         }
@@ -154,8 +202,10 @@
         flex-grow: 1;
         flex-basis: 18%;
         order: -1;
-        padding: 2%;
+        padding:2% 2%;
         margin: 0;
+            @include _colorBOX;
+        
         @media(max-width: 800px) {
             margin-top:10%;
         }
@@ -223,11 +273,21 @@
             }
         }
         h5:first-child {
-            font-family: $fontfamilyintroInline;
-            font-size: 1.5em;
-            margin-bottom: 15px;
-            text-align: center;
-            color: $colorH !important;
+             font-family: $fontfamilyradioBold;
+        font-size: 35px;
+
+        margin-bottom: 10px;
+        padding: 5px 0 5px 10px;
+
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        text-transform: uppercase;
+
+        border-bottom: 2px solid $colorH;
+        border-left: 30px solid $colorH;
+
+        @include _fonts;
             @media(max-width: 600px) {
                 color:#fff !important;
             }
@@ -245,11 +305,21 @@
         }
     }
     .rightTitle {
-        font-family: $fontfamilyintroInline;
-        font-size: 1.3em;
-        margin-bottom: 15px;
-        text-align: center;
-        color: $colorH;
+     font-family: $fontfamilyradioBold;
+        font-size: 35px;
+
+        margin-bottom: 10px;
+        padding: 5px 0 5px 10px;
+
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        text-transform: uppercase;
+
+        border-bottom: 2px solid $colorH;
+        border-left: 30px solid $colorH;
+
+        @include _fonts(1.3em);
         @media(max-width: 800px) {
             color:#fff;
             margin-bottom: 10px;
@@ -263,8 +333,7 @@
 
     margin-bottom: 28px;
     margin-left: 65px;
-
-    text-align: left;
+        padding:1.5%;
     @media(max-width: 800px) {
         margin: 0 0 20px 30px;
     }
@@ -354,7 +423,6 @@
                 align-self: auto;
                 padding: 0;
                 margin: 0;
-                margin: 0% 2% !important;
                 height: auto;
             }
             .blog-content {
@@ -463,7 +531,7 @@
                             margin-top: 0 !important;
                             background-repeat: no-repeat !important;
                         }
-                        h4 {
+                        h4{
                             flex: 1 1 30%;
                             margin-left: 5%;
                         }
@@ -500,7 +568,7 @@
         }
         a {
             font-family: $fontfamilyradio;
-            font-weight: 500;
+            font-weight: 700;
 
             padding-left: 10px;
 
@@ -510,17 +578,13 @@
 
             color: #000;
         }
-        &:hover {
-            border-bottom: 2px solid $colorgreen;
-            border-left: 30px solid $colorgreen;
-        } // &:hover a {
-        //     color: $colorgreen;
-        // }
+ 
     }
     h4 {
-        padding: 10px 0 10px 0;
+
         a {
             font-family: $fontfamilyradio;
+
         }
     }
     p {
@@ -611,6 +675,9 @@
                 }
             }
         }
+        h4{
+
+        }
     }
     .blog-content-news {
         display: -webkit-box;
@@ -620,7 +687,7 @@
 
 
         margin: 10px;
-        padding: 5%;
+        padding: 2%;
 
         -webkit-transition: all 1s;
         -o-transition: all 1s;
@@ -635,6 +702,12 @@
         -webkit-box-direction: normal;
         -ms-flex-flow: column;
         flex-flow: column;
+        h4{
+            padding:3% 0;
+        }
+        .more{
+            margin:1% 0;
+        }
         .efect {
             position: relative !important;
         }
@@ -746,4 +819,43 @@
             font-size: .8em;
         }
     }
+
+ 
+}
+#title {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  @include _fonts(4em);
+
+}
+#title:before,
+#title:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  width: 50%;
+  height: 3px;
+  vertical-align: middle;
+  background: $colorH;
+}
+#title:before {
+  left: -10px;
+  margin-left: -50%;
+}
+#title:after {
+  left: 10px;
+  margin-right: -50%;
+}
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+a{
+    color:$colorH !important;
 }

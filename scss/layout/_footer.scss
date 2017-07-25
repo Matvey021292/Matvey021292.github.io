@@ -322,7 +322,9 @@ footer {
 
 
 
-
+        a{
+            color:#eee!important;
+        }
 
 
         .mainBootoom {
@@ -372,6 +374,13 @@ footer {
                 padding: 0.5em 1em;
                 right:0;
                 top:0;
+                @include _fonts(1em);
+                a{
+                text-transform:uppercase;
+}
+
+  
+
 
                 @media(max-width: 600px) {
 

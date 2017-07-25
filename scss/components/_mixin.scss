@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,900);
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&subset=cyrillic,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script&subset=cyrillic,latin-ext');
 @font-face{
 	font-family: 'fantastic';
 	src:url('../fonts/avesome.ttf');
@@ -58,9 +60,9 @@ $fontFamilyFira:'Fira Mono', monospace;
 $fontfamilyWeb: 'Istok Web', sans-serif;
 $fontfamilyWfantasy: fantastic, sans-serif;
 $fontfamilyWroboto: 'Roboto', sans-serif;
-$fontfamilyradio: roadRadio, sans-serif;
+$fontfamilyradio: 'Oswald', sans-serif;
 $fontfamilyfeaser:    feathericons,sans-serif;
-$fontfamilyradioBold: roadRadioBold, sans-serif;
+$fontfamilyradioBold:'Oswald', sans-serif;
 $fontfamilyintro: 'Intro', sans-serif;
 $fontfamilyintroInline: 'Intro-Inline', sans-serif;
 $textshadow:   0 1px 0 #ccc,
@@ -89,18 +91,11 @@ $colorH:#243B55;
 }     
 // beckgroundBODY
 @mixin _colorBackground{
-      background: #ADA996;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, rgba(234, 234, 234, 0.90), rgba(219, 219, 219, 0.90), rgba(242, 242, 242, 0.90), rgba(173, 169, 150, 0.7))
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background:#FFF;
 }
 // backgroundBOX
 @mixin _colorBOX($to:top){
-  background: #ECE9E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to $to, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to $to, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FFF;
 
 }
 

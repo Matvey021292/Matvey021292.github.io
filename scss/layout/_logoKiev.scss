@@ -86,27 +86,28 @@
 }
 
 /* Colors */
+$colorE:#bdc3c7;
+$colorC:#ccc;
+$colorD:#F2F2F2;
+.ot-letter-left { background: $colorE; }
+.ot-letter-left span { text-shadow: 1px 4px 6px $colorE, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px $colorE; }
+.ot-letter-left span:after { color: $colorC; }
+.ot-letter-left:hover span:after { color: $colorC}
 
-.ot-letter-left { background: #e74d3c; }
-.ot-letter-left span { text-shadow: 1px 4px 6px #e74d3c, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #e74d3c; }
-.ot-letter-left span:after { color: #e74d3c; }
-.ot-letter-left:hover span:after { color: #ea6253; }
+.ot-letter-right { background: $colorE; }
+.ot-letter-right span { text-shadow: 1px 4px 6px $colorE, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px $colorE; }
+.ot-letter-right span:after { color: $colorC; }
+.ot-letter-right:hover span:after { color: $colorC; }
 
-.ot-letter-right { background: #ea6657; }
-.ot-letter-right span { text-shadow: 1px 4px 6px #ea6657, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #ea6657; }
-.ot-letter-right span:after { color: #ea6657; }
-.ot-letter-right:hover span:after { color: #ed7a6e; }
+.ot-letter-top { background: $colorE; }
+.ot-letter-top span { text-shadow: 1px 4px 6px $colorE, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px $colorE ; }
+.ot-letter-top span:after { color: $colorC; }
+.ot-letter-top:hover span:after {color: $colorC }
 
-.ot-letter-top { background: #ee7f72; }
-.ot-letter-top span { text-shadow: 1px 4px 6px #ee7f72, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #ee7f72; }
-.ot-letter-top span:after { color: #ee7f72; }
-.ot-letter-top:hover span:after { color: #f09389; }
-
-.ot-letter-bottom { background: #e95949; }
-.ot-letter-bottom span { text-shadow: 1px 4px 6px #e95949, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #e95949; }
-.ot-letter-bottom span:after { color: #e95949; }
-.ot-letter-bottom:hover span:after { color: #eb6e60; }
-
+.ot-letter-bottom { background: $colorE; }
+.ot-letter-bottom span { text-shadow: 1px 4px 6px $colorE, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px $colorE; }
+.ot-letter-bottom span:after { color: $colorC; }
+.ot-letter-bottom:hover span:after { color: $colorC }
 /* Left */
 .ot-letter-left span:before,
 .ot-letter-left span:after {
